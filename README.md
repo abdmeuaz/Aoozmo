@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<!-- زر دفع PayPal -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_xclick">
+  <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL">
+  <input type="hidden" name="item_name" value="Product Name">
+  <input type="hidden" name="amount" value="PRODUCT_PRICE">
+  <input type="hidden" name="currency_code" value="USD">
+  <input type="hidden" name="return" value="YOUR_RETURN_URL">
+  <input type="hidden" name="cancel_return" value="YOUR_CANCEL_URL">
+  <input type="submit" value="ادفع الآن عبر PayPal" class="pay-now-button">
+</form><!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
